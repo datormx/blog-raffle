@@ -1,0 +1,181 @@
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url('../fonts/Montserrat/Montserrat-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat-Thin;
+  src: url('../fonts/Montserrat/Montserrat-Thin.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('../fonts/Montserrat/Montserrat-Bold.ttf'); 
+}
+
+
+body {
+  font-family: Montserrat-Regular;
+  padding: 20px;
+  background:#073763;
+}
+
+body a{
+  
+  text-decoration: none;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: #fcfcfc;
+}
+
+.giphy-embed{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-bottom: 20px;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 100%;
+}
+
+.leftcolumn h1{
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 25px;
+}
+
+.leftcolumn h3, h4{  
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 150px;
+}
+
+
+.leftcolumn p{
+  padding-right: 150px;
+  padding-left: 150px;
+  text-align: justify;
+}
+
+.leftcolumn ul{
+  padding-right: 150px;
+  padding-left: 180px;
+}
+
+.leftcolumn li{
+  padding-bottom: 18px;
+}
+
+.leftcolumn img{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 20px;
+}
+
+/* Right column */
+/* .rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+} */
+
+/* Fake image */
+.fakeimg {
+  background-color: #bbb;
+  display: block;
+  width: 36%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #fcfcfc;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+.buttond:hover{
+  background-color: ivory;
+  color: black;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+
+  .leftcolumn p{
+    padding-right: 11px;
+    padding-left: 11px;      
+    word-spacing: 0.12em;
+    text-align: justify;
+    text-justify: auto;
+  }
+
+  .leftcolumn h4{
+    padding-right: 11px;
+    padding-left: 11px;
+    text-align: center;
+  }
+
+  .leftcolumn h3{
+    padding-right: 11px;
+    padding-left: 11px;
+  }
+
+  .leftcolumn ul{
+    padding-right: 11px;
+    padding-left: 30px;
+    text-align: justify;
+  }
+  
+  .leftcolumn img{
+    width: 100%;
+  }
+
+  .leftcolumn .fakeimg{
+    width: 85%;
+    padding-bottom: 20px;
+  }
+
+  .giphy-embed{
+    width: 95%;
+  }
+
+  body h1{
+    font-size: 26px;
+  }    
+
+  .header{
+    font-size: 28px;
+  }
+}
