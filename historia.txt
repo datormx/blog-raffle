@@ -1,3 +1,8 @@
 Empezamos a escribir una nueva historia. :)
 
 En este archivo te contaremos de los cambios que se hacen.
+
+
+A mí también me gusta Git
+
+GitHub es genial. :D
